@@ -4,7 +4,7 @@ import subprocess  # subprocess module allows us to create new processes
 log=subprocess.run(["git", "log", "-1", "--pretty='%s'"],stdout=PIPE, stderr=PIPE)
 log_readable=log.stdout.decode()
 print(log_readable)
-fname="version.txt"
+fname="version1.0.txt" #changing version name to 1.0
 if(os.path.isfile(fname)):
     s = open(fname, 'r').read()
     segments=s.split('.')
