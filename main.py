@@ -7,7 +7,7 @@ print(log_readable)
 fname="version1.0.txt" #changing version name to 1.0
 if(os.path.isfile(fname)):
     s = open(fname, 'r').read() #this will read a file 
-    segments=s.split('.')
+    segments=s.split('.') #this section will split the string on . delemeter
     print(len(segments))
     print(segments[0])
     print(s)
