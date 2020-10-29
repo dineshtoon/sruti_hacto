@@ -13,5 +13,5 @@ if(os.path.isfile(fname)):
     print(s)
 else:
     file = open("version.txt", "w")
-    file.write("1.0.0")
+    file.write("1.0.0") #writing version number to file
     file.close()
